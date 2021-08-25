@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: monospace;
+    cursor: pointer;
+    transition: .4s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(189, 140, 6, 0.4), rgba(148, 7, 26, 0.616));
+}
+.calculator{
+    position: relative;
+    display: grid;
+    background-color:rgb(61, 68, 94);
+    border: 3px solid rgb(22, 21, 21);
+    border-radius: 30px;
+    padding-bottom: 20px; 
+}
+.calculator .valuee {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    outline: none;
+    padding: 10px;
+}
+.calculator{
+    font-size: 18px;
+}
+.valuee{
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    font-size: 40px;
+    width: 320px;
+    caret-color: white;
+    border-radius: 15px;
+    border: 2px solid;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.calculator span {
+    display: grid;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+.calculator span.num{
+    color: whitesmoke;
+    font-size: 25px;
+}
+.calculator span.num:hover{
+    background-color: mediumblue;
+    color: black;
+    border: 1px solid black;
+}
+.calculator span.Clear{
+    grid-column: span 2;
+    width: 160px;
+    background-color: rgb(220, 10, 10);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.calculator span.Clear:hover{
+    background-color: red;
+    border: 1px solid white;
+}
+.calculator span.equal{
+    background-color: rgb(31, 129, 11);
+    border: 1px solid black;
+}
+.calculator span.equal:hover{
+    background-color: rgb(33, 167, 7);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 160px;
+}
